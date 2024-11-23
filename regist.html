@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potterheads</title>
+    <link rel="stylesheet" href="styleuts.css?v=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/UTS/img/logo1.png" type="png">
+</head>
+<body>
+    <header>
+        <div class="logo"><i class="fa fa-bolt" style="color:silver;"></i> Harry Potter Fan Site</div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fa fa-home"></i>  Home</a></li>
+                <li><a href="gallery.html"><i class="fa fa-file-image-o"></i>  Gallery ▼</a>
+                <ul class="dropdown">
+                    <li><a href="#houses-list">The Houses</a></li>
+                    <li><a href="#character-list">The Characters</a></li>
+                    <li><a href="#character-list-gryffin">From Gryffindor</a></li>
+                    <li><a href="#character-list-slytherin">From Slytherin</a></li>
+                    <li><a href="#character-list-raven">From Ravenclaw</a></li>
+                    <li><a href="#character-list-huffle">From Hufflepuff</a></li>
+            </ul> </li>
+                <li><a href="about.html"><i class="fa fa-info-circle"></i>  About</a></li>
+                <li><a href="test.html"><i class="fa fa-graduation-cap"></i>  Test Yourself</a></li>
+                <li><a href="contact.html"><i class="fa fa-address-card"></i>  Contact Me</a></li>
+                <li><a href="regist.html"><i class="fa fa-id-badge"></i>  Registration</a></li>
+            </ul>
+        </nav>
+    </header>
+
+ <div class="containerForm">
+    <h1 class="form-title">Registration Form</h1>
+    <form action="#">
+        <div class="main-user-info">
+            <div class="user-input-box">
+                <label for="fullName">Nama Lengkap</label>
+                <input type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Masukan nama lengkap"/>
+            </div>
+            <div class="user-input-box">
+                <label for="username">Username</label>
+                <input type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Masukan username"/>
+            </div>
+            <div class="user-input-box">
+                <label for="email">Email</label>
+                <input type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Masukan email"/>
+            </div>
+            <div class="user-input-box">
+                <label for="phoneNumber">Nomor Telepon</label>
+                <input type="text"
+                        id="phoneNumber"
+                        name="phoneNumber"
+                        placeholder="Masukan Nomor Telepon"/>
+            </div>
+            <div class="user-input-box">
+                <label for="password">Password</label>
+                <input type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Masukan password"/>
+            </div>
+            <div class="user-input-box">
+                <label for="confirmPassword">Ulangi Password</label>
+                <input type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Ulangi password"/>
+            </div>
+        </div>
+        <div class="gender-details-box">
+            <span class="gender-title">Jenis Kelamin</span>
+            <div class="gender-category">
+                <input type="radio" name="gender" id="male">
+                <label for="male">Laki laki</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Perempuan</label>
+            </div>
+        </div>
+        <div class="form-submit-btn">
+            <input type="submit" value="Register">
+        </div>
+    </form>
+ </div>
+
+ <footer>
+    &copy; 2024 Harry Potter Fan Site. All rights reserved.<br>
+    Design By Kayla Dwi Novita<br>
+    <a style="color: beige;" href="https://www.harrypotter.com/">Harry Potter Official Website</a>
+</footer>
+</body>
+</html>

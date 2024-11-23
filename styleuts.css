@@ -1,0 +1,525 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: #261f61;
+    line-height: 2;
+    background-image: url(/UTS/img/back4.jpeg);
+}
+
+h1 {
+    text-align: center;
+    color: beige;
+    font-size: 35px;
+}
+h2 {
+    text-align: center;
+    color: silver;
+}
+h3 {
+    color: beige;
+}
+h4 {
+    color: beige;
+}
+p {
+    text-align: justify;
+    margin: 12px;
+    color: silver;
+   
+}
+
+.sidebar {
+    width: 200px; /* Lebar sidebar */
+    background-color: #261f61; /* Warna latar belakang */
+    padding: 20px; /* Padding di dalam sidebar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Bayangan pada sidebar */
+    min-width: 250px;
+    border-radius: 8px;
+}
+.clock {
+    font-size: 24px; /* Ukuran font untuk jam */
+    font-weight: bold; /* Menebalkan teks jam */
+    color: beige;
+}
+.video-container {
+    margin-top: 15px;
+}
+iframe {
+    width: 100%;
+    height: 200px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color: beige;
+}
+.containerForm {
+    width: 100%;
+    max-width: 650px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    color: beige;
+    margin-left: 285px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px beige;
+}
+.form-title {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: beige;
+    text-shadow: 2px 2px 2px #000033;
+    border-bottom: solid 1px beige;
+}
+.main-user-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.user-input-box:nth-child(2n) {
+    justify-content: end;
+}
+.user-input-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.user-input-box label {
+    width: 95%;
+    color: beige;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+.user-input-box input {
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid #261f61;
+    padding: 0 10px;
+}
+.gender-title {
+    color: beige;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid beige;
+}
+.gender-category {
+    margin: 15px 0;
+    color: beige;
+}
+.gender-category label {
+    padding: 0 20px 0 5px;
+}
+.gender-category label,
+.gender-category input, 
+.form-submit-btn input {
+    cursor: pointer;
+}
+.form-submit-btn {
+    margin-top: 40px;
+}
+.form-submit-btn input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: #000033;
+}
+.form-submit-btn input:hover {
+    background: #000033;
+    color: beige;
+}
+
+.content {
+    width: 50%;
+    height: 50%;
+    flex-grow: 1;
+    padding: 5px;
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    color: #ffd9b3;
+}
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 13s linear infinite;
+}
+@keyframes marquee {
+    0% { transform: translate(0); }
+    100% { transform: translate(-100%); }
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#000033;
+    padding: 10px 15px;
+}
+
+a:link {
+    color: silver;
+}
+.logo {
+    font-size: 22px;
+    color: silver;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 45px;
+}
+
+nav ul li a {
+    color: beige;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 16px;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: beige;
+    color: #000033;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+ul li ul.dropdown {
+    width: 22%;
+    background-color: #000033;
+    color: beige;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    border-radius: 20px;
+}
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+#character-list, #character-list-gryffin, #character-list-slytherin, #character-list-raven, #character-list-huffle, #houses-list {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.character-grid, .houses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.character-card, .houses-card {
+    background-color: #000033;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    color: beige;
+}
+
+.character-card img, .houses-card img {
+    width: 65%;
+    border-radius: 8px;
+}
+
+.character-card h3, .houses-card h3 {
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+#more {
+    display: none;
+}
+button {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    background-color: beige;
+    margin-top: 15px;
+    cursor: pointer;
+}
+div, span {
+    font-size: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px; 
+}
+.dropbtn {
+    background-color: #000033;
+    color: beige;
+    padding: 20px 45px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 150%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-left: 55px;
+    margin-right: 50px;
+}
+.dropbtn:hover {
+    background-color: #000033;
+}
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #000033;
+    min-width: 200px;
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 55px;
+    margin-right: 50px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content p {
+    margin: 20px 0;
+    color: beige;
+    background-color: #000033;
+}
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: beige;
+}
+.contact .content p {
+    font-weight: 300;
+    color: beige;
+}
+.containerContact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color: beige;
+}
+.containerContact .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.containerContact .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.containerContact .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.containerContact .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: beige;
+    flex-direction: column;
+    font-weight: 300;
+}
+.containerContact .contactInfo .box .text h3 {
+    font-weight: 500;
+    color: beige;
+    text-align: left;
+}
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.contactForm h2 {
+    font-size: 30px;
+    color: beige;
+    font-weight: 500;
+}
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #261f61;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox  span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: black;
+}
+.contactForm .inputBox  input:focus ~ span,
+.contactForm .inputBox  input:valid ~ span,
+.contactForm .inputBox  textarea:focus ~ span,
+.contactForm .inputBox  textarea:valid ~ span  
+{
+    color: beige;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox  input[type="submit"] {
+    width: 100px;
+    background: beige;
+    color: #261f61;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/*MEMBUAT PAGE QUIZ*/
+.qa_box {
+    width: 500px;
+    padding: 20px;
+    min-height: 100px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: silver;
+    border-radius: 15px;
+    margin-left: 380px;
+}
+.qa_header {
+    background-color: #000033;
+    color: beige;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    margin: -20px -20px 20px;
+    border-radius: 15px 15px 0 0;
+    font-size: 20px;
+}
+.qa_set {
+    display: none;
+}
+.qa_set.active{
+    display: block;
+}
+.qa_set h4{
+    margin: 0 0 15px;
+    font-size: 20px;
+}
+.qa_ans_row{
+    position: relative;
+    margin-bottom: 10px;
+}
+.qa_ans_row input{
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.qa_ans_row span{
+    display: block;
+    padding: 8px 15px;
+    background-color: silver;
+    border-radius: 15px;
+    transition: all 0.3s ease-out;
+}
+.qa_ans_row:hover span{
+    background-color: beige;
+    color: #000033;
+}
+.qa_ans_row input:checked + span{
+    background-color: rgb(215, 67, 67);
+    color: black;
+}
+.qa_ans_row input[valid]:checked + span{
+    background-color: lightgreen;
+    color: black;
+}
+.qa_footer{
+    padding: 10px 0 0;
+    text-align: right;
+}
+.btn1{
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #05054a;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.btn1:hover{
+    background-color: silver;
+    color: black;
+}
+
+footer {
+    background-color: #000033;
+    text-align: center;
+    padding: 0;
+    margin-top: 70px;
+    color: beige;
+}
