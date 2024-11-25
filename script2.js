@@ -27,7 +27,7 @@ qaAnsRow.forEach( function(qaAnsRowSingle){
             score.innerHTML = scoreCount;
             totalScore.innerHTML = scoreCount;
         }else{
-            scoreCount -=10;
+            scoreCount +=0;
             score.innerHTML = scoreCount;
             totalScore.innerHTML = scoreCount;
         }
